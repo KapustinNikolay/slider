@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable:no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header-form">
+        <div class="form-inline">
+            <div class="form-group">
+                <label>Колличество элементов в галлерее : </label>
+                <input type="text" class="form-control" id="slider-count">
+            </div>
+            <button class="btn btn-default" id="rebuild-slider">Перерисовать</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 glyphicon glyphicon-arrow-left arrow slide-prev"></div>
+        <div class="col-xs-10 slider-container"></div>
+        <div class="col-xs-1 glyphicon glyphicon-arrow-right arrow slide-next"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="slider.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

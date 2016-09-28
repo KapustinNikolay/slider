@@ -1,0 +1,37 @@
+.slider-container {
+    border: 1px solid black;
+    height: 320px;
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slider-wrapper {
+    transform: translateX(0);
+    transition: transform .3s;
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #797373;
+}
+
+.slider__element {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.slider__element > .rectangle {
+    border: 1px solid black;
+    height: 300px;
+}
+
+.header-form {
+    margin: 20px 0;
+}
