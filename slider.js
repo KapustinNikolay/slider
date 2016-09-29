@@ -27,7 +27,7 @@
         var elemWidth = getRndWidth();
         var elem = $('<div class="slider__element"><div class="rectangle"></div></div>').width(elemWidth);
         wrapper.append(elem);
-        wrapperWidth += elemWidth;
+        wrapperWidth += elem.outerWidth();
       }
 
       wrapper.width(wrapperWidth);

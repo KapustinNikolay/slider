@@ -10,14 +10,18 @@ $(document).ready(function () {
   $(document).on('click', '.slide-prev', slider.prevSlide);
   $(document).on('click', '.slide-next', slider.nextSlide);
 
-  $(document).on('mousewheel', '.slider-container', function (e) {
+  $(document).on('mousewheel', '.slider-container', onMouseWheel);
+  $(document).on('DOMMouseScroll', '.slider-container', onMouseWheel);
+
+  function onMouseWheel(e) {
     e = e.originalEvent;
+
     if (e.wheelDelta && e.wheelDelta < 0 || e.detail && e.detail > 0) {
       slider.nextSlide();
     } else {
       slider.prevSlide();
     }
-  });
+  }
 
   $(document).on('click', '#rebuild-slider', function () {
     var val = sliderCountInp.val();
